@@ -1,4 +1,4 @@
-# ares-cli
+# ares-cli-air
 
 ## Summary
 
