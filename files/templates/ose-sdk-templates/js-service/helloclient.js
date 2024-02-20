@@ -7,6 +7,9 @@
 // helloclient.js
 // Subscribe & cancel subscription to helloService's heartbeat method
 
+
+/// *** js service to make template
+
 /// For system bus in webos
 const Service = require('webos-service');
 
