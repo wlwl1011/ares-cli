@@ -13,9 +13,9 @@ const async = require('async'),
     nopt = require('nopt'),
     log = require('npmlog'),
     path = require('path'),
-    GeneratorLib = require('./../lib/generator'),
-    commonTools = require('./../lib/base/common-tools'),
-    readJsonSync = require('./../lib/util/json').readJsonSync;
+    GeneratorLib = require('../lib/generator'),
+    commonTools = require('../lib/base/common-tools'),
+    readJsonSync = require('../lib/util/json').readJsonSync;
 
 const cliControl = commonTools.cliControl,
     version = commonTools.version,
