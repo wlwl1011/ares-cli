@@ -1,9 +1,0 @@
-{
-  "id": "demo",
-  "description": "HelloWorld Service",
-  "services": [
-    {
-      "name": "demo"
-    }
-  ]
-}
