@@ -7,7 +7,9 @@
  */
 
 const async = require('async'),
+    /// inquire is a collection of common interactive command line user interface(CLI)
     inquirer = require('inquirer'),
+    /// nopt is package for process parsing
     nopt = require('nopt'),
     log = require('npmlog'),
     path = require('path'),
@@ -87,6 +89,7 @@ if (argv.level) {
     }
 }
 
+/// Parse argv to options
 const config = appdata.getConfig(true),
     options = {
         tmplFile: path.join(__dirname, '/../files/conf/', 'template.json'),
@@ -112,6 +115,7 @@ if (argv.help) {
 } else if (argv.list) {
     op = list;
 } else {
+    /// execute generate.js 
     op = generate;
 }
 
@@ -167,6 +171,7 @@ function queryInfo(queryFile) {
 }
 
 function generate() {
+    /// call generate.js
     const gen = getGenerator();
     const templates = gen.getTmpl();
 
@@ -208,7 +213,17 @@ function generate() {
             }
             // query mode, only CLI can approach. API only use props
             if(!options.props.length) {
-                if (options.query && options.tmplName.match(/(^hosted)/)) {
+
+                /// Make query file for acp_service
+                if (options.query && options.tmplName.match(/(^acp_service)/)) {
+                    const queryConfigFile = getQueryFile(config.profile, 'hosted');
+                    return queryInfo(queryConfigFile).then(function(info) {
+                        for (const i in info) {
+                            options.appinfo[i] = info[i];
+                        }
+                    });
+                } 
+                else if (options.query && options.tmplName.match(/(^hosted)/)) {
                     const queryConfigFile = getQueryFile(config.profile, 'hosted');
                     return queryInfo(queryConfigFile).then(function(info) {
                         for (const i in info) {
