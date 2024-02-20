@@ -29,24 +29,13 @@
     },
 
    
-    "acp_service": {
-        "type": "acpservice",
-        "path": "$cli-root/files/templates/ose-sdk-templates/bootplate-web",
-        "description": "web app for webOS",
-        "metadata": {
-            "id": "webappinfo"
-        },
-        "deps": [
-            "icon"
-        ],
-        "default": true
-    },
+
     "hosted_acp_service": {
         "type": "acpservice",
-        "path": "$cli-root/files/templates/ose-sdk-templates/hosted-webapp",
-        "description": "hosted web app for webOS",
+        "path": "$cli-root/files/templates/ose-sdk-templates/hosted-acpservice",
+        "description": "hosted acp service for webOS",
         "metadata": {
-            "id": "webappinfo"
+            "id": "acpserviceinfo"
         },
         "deps": [
             "icon"
