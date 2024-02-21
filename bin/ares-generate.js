@@ -211,12 +211,12 @@ function generate() {
             if (!template.type) {
                 return;
             }
-            console.log("in ares-generate.js tmplName",tmplName);
+            console.log("in ares-generate.js tmplName",options.tmplName);
             // query mode, only CLI can approach. API only use props
             if(!options.props.length) {
 
                 /// Make query file for acp_service
-                if (options.query && options.tmplName.match(/(hosted_acp_service)/)) {
+                if (options.query && options.tmplName.match(/acp_service)/)) {
                     const queryConfigFile = getQueryFile(config.profile, 'acpservice');
                     return queryInfo(queryConfigFile).then(function(info) {
                         for (const i in info) {
