@@ -44,8 +44,8 @@
     
     "acpserviceinfo": {
         "type": "acpserviceinfo",
-        "path": "$cli-root/files/templates/ose-sdk-templates/appinfo/appinfo.json",
-        "description": "appinfo.json for web app"
+        "path": "$cli-root/files/templates/ose-sdk-templates/acpserviceinfo/appinfo.json",
+        "description": "appinfo.json for acpserviceinfo"
     },
 
 
