@@ -32,7 +32,7 @@
 
     "hosted_acp_service": {
         "type": "acpservice",
-        "path": "$cli-root/files/templates/ose-sdk-templates/hosted-acpservice",
+        "path": "$cli-root/files/templates/ose-sdk-templates/hosted-acpservice/src",
         "description": "hosted acp service for webOS",
         "metadata": {
             "id": "acpserviceinfo"
