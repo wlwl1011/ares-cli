@@ -1,9 +1,0 @@
-{
-  "id": "com.example.app.acpservice",
-  "version": "1.0.0",
-  "vendor": "My Company",
-  "type": "acp",
-  "main": "main.c",
-  "title": "new ACP Service",
-  "icon": "icon.png"
-}
