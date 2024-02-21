@@ -1,11 +1,11 @@
 {
     "id": {
         "query": "app id",
-        "default": "com.domain.app"
+        "default": "com.example.app.acpservice"
     },
     "title": {
         "query": "title",
-        "default": "new app"
+        "default": "new ACP Service"
     },
     "version": {
         "query": "version",
