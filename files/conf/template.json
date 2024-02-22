@@ -44,7 +44,10 @@
     
     "acpserviceinfo": {
         "type": "acpserviceinfo",
-        "path": "$cli-root/files/templates/ose-sdk-templates/acpserviceinfo/appinfo.json",
+        "path": [
+            "$cli-root/files/templates/ose-sdk-templates/acpserviceinfo/appinfo.json",
+            "$cli-root/files/templates/ose-sdk-templates/acpserviceinfo/CMakeLists.txt"
+        ],
         "description": "appinfo.json for acpserviceinfo"
     },
 

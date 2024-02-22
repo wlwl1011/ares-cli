@@ -217,6 +217,7 @@ function generate() {
 
                 /// Make query file for acp_service
                 if (options.query && options.tmplName.match(/(acp_service)/)) {
+                    console.log("Its acp service");
                     const queryConfigFile = getQueryFile(config.profile, 'acpservice');
                     return queryInfo(queryConfigFile).then(function(info) {
                         for (const i in info) {
