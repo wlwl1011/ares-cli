@@ -44,10 +44,7 @@
     
     "acpserviceinfo": {
         "type": "acpserviceinfo",
-        "path": [
-            "$cli-root/files/templates/ose-sdk-templates/acpserviceinfo/appinfo.json",
-            "$cli-root/files/templates/ose-sdk-templates/acpserviceinfo/CMakeLists.txt"
-        ],
+        "path": "$cli-root/files/templates/ose-sdk-templates/acpserviceinfo/appinfo.json",
         "description": "appinfo.json for acpserviceinfo"
     },
 
@@ -74,6 +71,13 @@
         "path": "$cli-root/files/templates/ose-sdk-templates/icon",
         "description": "app icon files [80x80]"
     },
+
+    "CMakeLists": {
+        "type": "CMakeLists",
+        "path":  "$cli-root/files/templates/ose-sdk-templates/acpserviceinfo/CMakeLists.txt",
+        "description": "CMakeLists file"
+    },
+    
     "qmlapp": {
         "type": "qmlapp",
         "path": "$cli-root/files/templates/ose-sdk-templates/qml-app",
