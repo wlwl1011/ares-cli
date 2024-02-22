@@ -39,7 +39,8 @@
         },
         "deps": [
             "icon",
-            "CMakeLists"
+            "CMakeLists",
+            "permission"
         ]
     },
     
@@ -77,6 +78,12 @@
         "type": "CMakeLists",
         "path":  "$cli-root/files/templates/ose-sdk-templates/acpserviceinfo/CMakeLists.txt",
         "description": "CMakeLists file"
+    },
+
+    "permission": {
+        "type": "permission",
+        "path":  "$cli-root/files/templates/ose-sdk-templates/acpserviceinfo/permission",
+        "description": "permission file"
     },
 
     "qmlapp": {
