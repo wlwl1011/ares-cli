@@ -82,7 +82,7 @@
 
     "permission": {
         "type": "permission",
-        "path":  "$cli-root/files/templates/ose-sdk-templates/acpserviceinfo/permission",
+        "path":  "$cli-root/files/templates/ose-sdk-templates/permission",
         "description": "permission file"
     },
 
